@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        .element {
+            height: 200px;
+            width: 200px;
+            margin: 0 auto;
+            position: relative;
+            background-color: red;
+            border-radius: 100%;
+            animation: stretch 3s ease-out 3s normal infinite none running ;
+            /* name|duration|timing-fuction|delay|iteration-count|fill-mode|play-state */
+        }
+        @keyframes stretch {
+        0% {
+            transform: scale(.3);
+            background-color: red; top: 0px; bottom: 0px;
+            border-radius: 100%;
+            visibility: hidden;
+            }
+
+        20% {
+            background-color: rgb(255, 135, 135); top: 200px; bottom: 0px;
+            visibility: visible;
+            }
+
+        40% {
+            background-color: rgb(190, 255, 106);  top: 0px; bottom: 200px;
+            visibility: visible;
+            }
+        60% {
+            background-color: rgb(241, 157, 0);  top: 200px; bottom: 0px;
+            visibility: visible;
+            }
+        
+        80% {
+            background-color: yellowgreen;  top: 0px; bottom: 200px;
+            visibility: visible;
+            }
+
+        100% {
+            transform: scale(1.5);
+            background-color: yellow; top: 200px; bottom: 0px;
+            border-radius: 50%;
+            visibility: hidden;
+            }
+        }
+
+        body,
+        html {
+        height: 100%;
+        }
+
+        body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="element"></div>
+
+</body>
+</html>

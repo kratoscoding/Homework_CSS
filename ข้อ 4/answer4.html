@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer 4-5</title>
+</head>
+<body>
+    
+    <h1>4. slide 15 (review CSS) </h1>
+    <h1>Answer</h1>
+    <table>
+        <h2>4.1</h2>
+        <tr>
+            <th>Value ใน Display Property</th>
+        </tr>
+        <tr><td>inline</td></tr>
+        <tr><td>block</td></tr>
+        <tr><td>contents</td></tr>
+        <tr><td>flex</td></tr>
+        <tr><td>grid</td></tr>
+        <tr><td>inline-(block, flex, gird, table)</td></tr>
+        <tr><td>run-in</td></tr>
+    </table>
+
+    <h2>4.2 grid และ flex ต่างกันอย่างไร</h2>
+    <p> grid เราสามารถจัดของไว้ตรงไหนก็ได้ 
+        flex เราสามารถจัดวางของต่างๆภายใน layout 1 แถว อาจจะเป็นแนวตั้งหรือนอน
+    </p>
+
+    <h2>4.3 justify and align ต่างกันอย่างไร</h2>
+    <p>justify คือการจัด content ตาม Main Axis </p>
+    <p>align คือ การจัดcontent ตามแนว Cross Axis และ items ต้องมากกว่า 1 บรรทัดถึงจะทำงาน</p>
+
+
+    <hr>
+    
+    <H1>5. Answer Slide16 (review CSS) </H1>
+    <h2>5.1 position คืออะไร และ อะไรบ้าง</h2>
+    <p>position คือ property ที่ใช้ในการกำหนดตำแหน่ง</p>
+    <li>Static เป็นค่าพื้นฐานของทุกบล็อกโดยจะเลื่อนตามหน้าเว็บปกติ</li>
+    <li>Relative การเลื่อนออกจากตำแหน่งเดิม ตามที่เรากำหนดการดัน block จากทางซ้าย ขวา บน ล่าง</li>
+    <li>Absolute การเลื่อนออกจากมุมซ้ายบนสุดของหน้า จากการกำหนดการดัน block จากทาง ซ้าย ขวา บน ล่าง</li>
+    <li>fixed ยึดให้บล็อกติดอยู่กับที่</li>
+    <li>sticky การรวม relative กับ fixed ไว้ด้วยกัน โดยการกำหนด relative เพิ่มว่าจะให้ไป fix ที่ top หรือ bottom ทำให้เราเห็น block นั้นเลื่อนและถูกตรึงไว้เมื่อเรา scroll เม้าส์  </li>
+
+    
+
+    <h2>5.2 z-index คืออะไร ใช้อย่างไร</h2>
+    <p>z-index: เป็นการจัดการ element ในรูปแบบชั้น layer บนหน้าจอโดยค่าน้อยจะอยู่ด้านหลังส่วนค่ามากจะอยู่ด้านหน้า ค่าเริ่มของทุก element คือ z-index=0</p>
+
+    <h1>6. slide34 media query ให้ทำตามโจทย์</h1>
+    <h2>6.1 ให้ตั้งค่า media query 3 ขนาดจอ</h2>
+    <h2>ในหน้าจอแย่งเป็น 3 ส่วน</h2>
+        <li>6.2.1 มีรูปใหญ่กึ่งกลางจอ</li>
+        <li>6.2.2 ให้แบ่งหน้าจอ เป็น 1,2, หรือ 3 คอลัมน์ โดยแต่ละคอลัมน์ต้องมีหัวข้อและมีเนื้อหา</li>
+        <li>6.2.3 มีข้อความที่เป็นหัวข้อและเนื้อหาอยู่ตรงกลางจอ</li>
+    @media only screen and (display size) {
+        display size
+        max-width: 600px = 0% screen - 600px
+        min-width: 600px = 600 - 100% screen? 800px - 1200px
+        (min-width: 800px) and (max-width: 1200px)
+    }
+</body>
+</html>

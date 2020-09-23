@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer</title>
+</head>
+<body>
+<style>
+    table, th, td {
+       border: 1px solid black;
+       border-collapse: collapse;
+    }
+</style>
+    <h1>1. slide5 (review CSS) ให้สร้าง review.html แสดงเป็นตาราง </h1>
+    <h1>Answer</h1>
+    <table>
+        <tr>
+            <th>CSS Syntax ประกอบด้วย</th>
+            <th>CSS มีกี่แบบ</th>
+            <th>Selector มี่กี่แบบ อะไรบ้าง</th>
+            <th>Combinators มีกี่แบบ อะไรบ้าง</th>
+        </tr>
+        <tr>
+            <td>1.Selector</td>
+            <td>1.Inline Style Sheet</td>
+            <td>1.Class Selectors</td>
+            <td>1.Descendant combinators</td>
+        </tr>
+        <tr>
+            <td>2.Property</td>
+            <td>2.Embed Style Sheet</td>
+            <td>2.ID Selectors</td>
+            <td>2.Child combinators</td>
+        </tr>
+        <tr>
+            <td>3.Value</td>
+            <td>3.External Style Sheet</td>
+            <td>3.TAG Selectors</td>
+            <td>3.Sibling combinators</td>
+        </tr>
+        
+    </table>
+    <h1>CSS Syntax</h1>
+        <p>1.Selector คือ ส่วน HTML tag ที่เราต้องการจะให้แสดงผล เช่น < table > ก็จะแสดงผลในส่วนของตาราง</p>
+        <p>2.Property คือ ส่วนของคุณสมบัติที่เราต้องการให้แสดง เช่น สีตัวอักษร , ชนิดตัวอักษร , ขนาดตัวอักษร</p>
+        <p>3.Value คือ ค่าที่เราต้องการให้แสดง เช่น ตัวอักษรสีแดง , ตัวอักษรแบบ tahoma , ตัวอักษรขนาด 12 pt.</p>
+
+        <h1>CSS มี่กี่แบบ </h1>
+        <p>การเขียน css มีอยู่หลายแบบ แต่หลักๆ ใช้อยู่ 3 แบบคือ</p>
+        <p>1. inline style sheet คือการฝังลงไปในไลน์ ของtag html โดยการใช้ attribute style 
+            และตามด้วย value</p>
+        <p>2. Embed style sheet คือการฝังรวมไปกับโค้ดของ html ซึ่งโค้ดของ css จะอยู่ในไฟล์เดียวกันกับเว็บเพจ
+            ที่มีการเรียกใช้งาน css นั้น แต่จะมีการแยกออกมาอยู่ภายใน tag style</p>
+        <p>3. External style sheet เราจะเขียนโค้ด css แยกไว้ต่างหากได้ แล้วเราก็เรียกใช้งานได้ 2 แบบ คือ 
+            1.link style sheet 2.import style sheet </p>
+
+        <h1>Selector มี่กี่แบบ อะไรบ้าง</h1>
+        <p>1. class selectors เป็น selector ที่เราต้องกำหนดชื่อขึ้นมาเอง โดยclass selector 
+            ที่เราจะเรียกใช้งาน ต้องระบุชื่อ selector ให้กับ tag html จึงจะสามาระใช้งานคุณสมบัติของคลาสได้</p>
+        <p>2. ID Selectors เป็น selector ที่อิงกับ attribute ที่ชื่อ ID ซี่งอยู่ภายใน tag ของ html 
+            โดยที่ tag ของ html ใดมี ID ตรงกับ ID selector ที่กำหนดไว้กับ selector ก็จะมีผลต่อ tag นั้น </p>
+        <p>3. TAG Selectors สำหรับ Selector ในรูปแบบสุดท้ายที่จะกล่าวถึงในเบื้องต้นนี้เป็น Selector 
+            ที่อ้างอิงกับชื่อ Tag ของ HTML โดยตรง เช่น < p >, < div >, < h1 > เป็นต้น นั่นหมายความว่า 
+            ถ้าหากกำหนดคุณสมบัติให้แก่ TAG Selectors นี้แล้ว Tag ของ HTML ที่มีชื่อเดียวกับ Selectors 
+            นี้จะมีคุณสมบัติของ CSS เหมือนกันหมดทุก Tag ภายในเว็บเพจนั้น </p>
+
+        <h1>Combinators มีกี่แบบ อะไรบ้าง</h1>
+        <p>Descendant combinators คือ การเขียน Selector เพื่อสั่งการทำงานทั้งหมด ทั้ง ลูก หลาน เหลน โหลน 
+            โดยการเขียนนั้น ใช้ "ช่องว่าง" ในการสั่งงาน เช่น article li { } หมายถึง li ทั้งหมดที่มีอยู่ใน article</p>
+        <p>Child combinators คือ การสั่งงานเฉพาะ "ลูก" เท่านั้น ไม่นับรวมหลาน หรือเหลน โหลน การเขียนนั้น ใช้ 
+            "เครื่องหมายมากกว่า หรือ greater-than sign (>)" เช่น section>div { } คือ ให้กระทำการใดๆ 
+            กับ div ที่เป็น ลูกของ section เท่านั้น ถ้ามี div ซ้อนอยู่ใน div อีกที จะไม่ถูกสั่งการ</p>
+        <p>Sibling combinators มีสองแบบคือ </p>
+        <li>Adjacent sibling combinator คือ "น้องที่อยู่ถัดไป 1 คนเท่านั้น" ไม่นับคนที่ 3 หรือ 
+            คนอื่นๆ การเขียนนั้น ใช้ "เครื่องหมายบวก (+)" เช่น section+section { } คือ ให้กระทำการใดๆ 
+            กับ section ที่อยู่ต่อจาก section ที่เป็นพี่เท่านั้น</li>
+        <li> General sibling combinator คือ "น้องที่อยู่ถัดไปทุก ๆ คน" ใช้ "เครื่องหมายตัวหนอน 
+            หรือ tilde (~)" เช่น h1~p { } คือ ให้กระทำการใดๆ กับ p ที่อยู่หลัง h1 ไม่ว่าจะอยู่ในลำดับที่เท่าไร</li>
+    
+        <hr>
+    <h1>2. slide7 (review CSS)</h1>
+    <H1>Answer</H1>
+    <table>
+        <tr>
+            <th>property และ value คืออะไร แตกต่างกันอย่างไร</th>
+            <th>property ที่สอนใน precamp มีกี่กลุ่ม อะไรบ้าง</th>
+            <th>value unit มีกี่ประเภท อะไรบ้าง</th>
+        </tr> 
+        <tr>
+            <td>property คือคุณสมบัติ</td>
+            <td>Absulute Lenghts</td>
+            <td>Property for content</td>
+            
+        </tr>
+        <tr>
+            <td>value คือค่าของproperty</td>
+            <td>Relative Lenghts</td>
+            <td>Property for border</td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Property for padding</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Property for margin </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>Property for element</td>
+        </tr>
+    </table>
+    
+    
+
+        <h1>property และ value คืออะไร แตกต่างกันอย่างไร</h1>
+        <p>property คือชื่อของคุณสมบัติที่เรากำหนดให้ eliment นั้นๆ เช่น กว้าง ยาว สูง
+        value คือค่าของ property หรือ คุณสมบัติที่เราต้องการ เช่น กว้างเท่าไหร่ สูงเท่าไหร่ ยาวเท่าไหร่</p>
+
+        <h1>property ที่สอนใน precamp มีกี่กลุ่ม อะไรบ้าง</h1>
+        <p>Property for content </p>
+        <p>Property for border </p>
+        <p>Property for padding </p>
+        <p>Property for margin </p>
+        <p>Property for element </p>
+
+
+        <h1>value unit มีกี่ประเภท อะไรบ้าง</h1>
+        <p>มีสองแบบคือ </p>
+        <p>1. Absulute Lenghts</p>
+        <p>2. Relative Lenghts</p>
+        <table>
+            <tr>
+                <th>Absulute lenghts</th>
+                <th>Relative lenghts</th>
+            </tr>
+
+            <tr><td>cm</td><td>em</td>  </tr>
+            <tr><td>mm</td><td>ex</td> </tr>
+            <tr><td>in</td><td>ch</td> </tr>
+            <tr><td>px</td><td>rem</td>  </tr>
+            <tr><td>pt</td><td>vh</td> </tr>
+            <tr><td>pc</td><td>vw</td></tr>
+            <tr><td></td><td>vmin</td></tr>
+            <tr><td></td><td>vmax</td></tr>
+            <tr><td></td><td>%</td></tr>
+            
+        </table>
+
+        <hr>
+
+       
+
+
+    </body>
+</html>

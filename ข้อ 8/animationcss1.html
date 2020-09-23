@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลองกำหนด Keyframe</title>
+    <style>
+        body {
+            background-color: lightpink;
+        }
+        h2 {
+            margin: 0;
+            margin-top: 20px;
+            animation: h2 4s infinite;
+        }
+        @keyframes h2 {
+            0% {color: rgb(0, 0, 0)}
+            10% {color: rgb(49, 49, 46)}
+            20% {color: rgb(61, 61, 54)}
+            30% {color: rgb(88, 43, 253)}
+            40% {color: rgb(0, 2, 133)}
+            50% {color: rgb(21, 3, 122)}
+            60% {color: rgb(0, 37, 116)}
+            70% {color: rgb(57, 93, 255)}
+            80% {color: rgb(65, 52, 245)}
+            90% {color: rgb(48, 39, 163)}
+            100% {color: blue}
+        }
+
+        .aniColor {
+            color: lightblue;
+            font-size: 50px;
+            font-weight: 800;
+            animation: aniColor 4s infinite;
+        }
+        @keyframes aniColor {
+            0% {color: green}
+            25% {color: yellow}
+            50% {color: red}
+            100% {color: blue}
+        }
+
+        .aniWidth {
+            background: lightgray;
+            width: 50px;
+            height: 50px;
+            animation: aniWidth 4s infinite;
+        }
+        @keyframes aniWidth {
+            0% {width: 100px;}
+            25% {width: 150px;}
+            50% {width: 200px;}
+            80% {width: 300px;}
+            100% {width: 150px;}
+        }
+
+        .aniBorder {
+            border-bottom: solid 6px grey;
+            border-radius: 5px;
+            width: 200px;
+            animation: aniBorder 3s infinite;
+        }
+        @keyframes aniBorder {
+            0% {width: 150px;}
+            25% {width: 550px;}
+            50% {width: 200px;}
+            100% {width: 350px;}
+        }
+
+        .aniBackground {
+            background: green;
+            width: 200px;
+            height: 50px;
+            animation: aniBackground 4s infinite;
+            padding: 5px;
+        }
+        @keyframes aniBackground {
+            0% {background: red;}
+            25% {background: yellowgreen;}
+            50% {background: blue;}
+            75% {background: grey;}
+            100% {background: greenyellow;}
+        }
+
+        .aniPosition {
+            position: relative;
+            animation: aniPosition 3s infinite;
+            background-color: aqua;
+            width: 190px;
+            height: 50px;
+        }
+        @keyframes aniPosition {
+            from {left: 0px;}
+            to {left: 400px;}
+        }
+
+        .aniHide {
+            opacity: 1;
+            animation: aniHide 4s infinite;
+            width: 60px;
+            height: 60px;
+            opacity: 0;
+            background-color: black;
+            margin-bottom: 10px;
+            border-radius: 20px;
+        }
+        @keyframes aniHide {
+            0%   {opacity: 1;}
+            25%  {opacity: 0.75;}
+            50%  {opacity:0.5;}
+            50%  {opacity: 0.25;}
+            100% {opacity: 0;} 
+        }
+    </style>
+</head>
+<body>
+    <h2>8.1 Color</h2>
+    <span class="aniColor"> สี สี สี </span>
+
+    <h2>8.2 Width</h2>
+    <p class="aniWidth"></p>
+
+    <h2>8.3 Border</h2>
+    <p class="aniBorder"></p>
+
+    <h2>8.4 Background Color</h2>
+    <p class="aniBackground"></p>
+
+    <h2>8.5 Position Relative</h2>
+    <p class="aniPosition"></p>
+
+    <h2>8.6 Show and Hide</h2>
+    <p class="aniHide"></p>
+
+</body>
+</html>
